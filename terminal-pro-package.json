@@ -1,0 +1,22 @@
+{
+  "name": "terminal-pro",
+  "version": "1.0.0",
+  "description": "Terminal pro server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "bin": {
+    "start-terminal": "index.js"
+  },
+  "keywords": [],
+  "author": "Legend Sabbir",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "node-pty": "^1.0.0",
+    "ws": "^8.14.2"
+  }
+}

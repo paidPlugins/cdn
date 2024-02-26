@@ -16,4 +16,5 @@ npm i commander
 curl https://raw.githubusercontent.com/paidPlugins/cdn/main/terminal-pro-package.json -o package.json
 curl https://raw.githubusercontent.com/paidPlugins/cdn/main/server.js -o index.js
 
+chmod +x index.js
 npm install -g .

@@ -1,5 +1,5 @@
 apt install -y make python3 build-essential nodejs
-mkdir -p ~/.gyp && echo "{'variables': {'android_ndk_path': ''}}" > ~/.gyp/include.gy
+mkdir -p ~/.gyp && echo "{'variables': {'android_ndk_path': ''}}" > ~/.gyp/include.gypi
 
 npm uninstall -g terminal-pro
 rm -rf ~/.terminal-pro
